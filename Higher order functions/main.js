@@ -42,7 +42,6 @@
 // const sortBeersIBU = (beers) => {
 //   const sortedBeers = beers.sort((a, b) => a.ibu - b.ibu);
 
-
 //   for (let i = 0; i < sortedBeers.length; i++) {
 //     typeof sortedBeers[i].ibu === "number" ? "" : sortedBeers.shift(i); 
 //   };
@@ -66,7 +65,7 @@
 // }
 // console.log(matchBeerName(beers, "Buzz"));
 
-//7
+// //7
 
 // const matchBeerIBU = (beers, IBUToMatch) => {
 //   //Nos aseguramos de que el IBU sea un número.
@@ -82,7 +81,7 @@
 // }
 // console.log(matchBeerIBU(beers, 38))
 
-//8
+// //8
 
 // const beerOnIndex = (beers, beerName) => {
 //   for (let i = 0; i < beers.length; i++) {
@@ -95,7 +94,7 @@
 
 // console.log(beerOnIndex(beers, "Fake Lager"));
 
-//9
+// //9
 
 // const limitBeerAlcoholLevel = (beers, ABVNotToExceed) => {
 //   //nos aseguramos de que ABVNotToExceed sea un numero.
@@ -122,7 +121,7 @@
 // console.log(limitBeerAlcoholLevel(beers, 5));
 
 
-//10
+// //10
 
 // function sortBeerByProperty(beers, propertyName, boolean ) {
 
@@ -140,11 +139,11 @@
 //     }
 // }
 
-////No sabia porque no me andaba el sort, estaba usando punto en vez de corchetes jaja
+// //No sabia porque no me andaba el sort, estaba usando punto en vez de corchetes jaja
 
 // console.log(sortBeerByProperty(beers, "ibu", false));
 
-//11
+// //11
 
 function renderBeerTable(beers, htmlId) {
   //donde lo vamos a appendear.
