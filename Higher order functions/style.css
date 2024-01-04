@@ -23,36 +23,6 @@ main {
   padding: 5rem;
   color: aliceblue;
 } 
-.card {
-  width: 20rem;
-  height: max-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1.5px solid blue;
-  background-color: aqua;
-  align-self: center;
-  overflow: hidden;
-  padding: 1rem;
-
-}
-
-.card h1, h2, p {
-  text-align: center;
-  padding: 1rem;
-  border: 1px solid blue;
-  width: 100%;
-}
-
-.card > p {
-  font-weight: bold;
-}
-
-.card img {
-  width: 9rem;
-  height: 16rem;
-  overflow: hidden;
-}
 
 .table, th, td {
   border-collapse: collapse;
