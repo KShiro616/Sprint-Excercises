@@ -21,6 +21,7 @@ main {
   gap: 1rem;
   overflow: hidden;
   padding: 5rem;
+  color: aliceblue;
 } 
 .card {
   width: 20rem;
@@ -51,4 +52,11 @@ main {
   width: 9rem;
   height: 16rem;
   overflow: hidden;
+}
+
+.table, th, td {
+  border-collapse: collapse;
+  border: 1px solid white;
+  padding: 0.5em;
+
 }

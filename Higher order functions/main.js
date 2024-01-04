@@ -142,6 +142,51 @@
 
 // console.log(sortBeerByProperty(beers, "ibu", false));
 
+//11
+
+function renderBeerTable(beers, htmlId) {
+  //donde lo vamos a appendear.
+  const captureId = document.getElementById(htmlId) 
+  //aca voy a guardar la data de los rows
+  const saveTbodyContent = document.createElement("tbody"); 
+
+  const table = document.createElement("table");
+  //le agrego el thead a table
+  table.innerHTML += `
+  <thead>
+  <tr>
+  <th>Name</th>
+  <th>ABV</th>
+  <th>IBU</th>
+  </tr>
+  </thead> 
+  `
+  //Para estilar.
+  table.classList.add("table") 
+
+  beers.forEach(beer => {
+    const tableData = `
+    <tr>
+    <td>${beer.name}</td>
+    <td>${beer.abv}</td>
+    <td>${beer.ibu}</td>
+    </tr>
+    `
+    //le agregamos al tbody la data correspondiente a su columna por cada cerveza.
+    saveTbodyContent.innerHTML+= tableData; 
+  });
+
+  //le appendeamos todo los que nos agrego el foreach al tbody a la table.
+  table.appendChild(saveTbodyContent)
+  //y finalmente mostramos la tabla; en este caso, en main.
+  captureId.appendChild(table)
+
+}
+
+//la 11 me llevo un tiempito pensarla jaja
+
+renderBeerTable(beers, "main")
+
 
 
 
