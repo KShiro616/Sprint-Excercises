@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: rgb(197, 193, 193);
+    min-height: 4rem;
+    box-shadow: 0 0 10px black;
+}
+
+.footer_header {
+    background-color: orange;
+}
+
+header {
+    z-index: 0;
+    justify-content: space-between;
+}
+
+header nav a:hover {
+    background-color: darkslategray;
+    color: orange;
+    transition: 0.2s;
+}
+
+footer {
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 8%;
+    transition: 0.2s;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    background-color: darkslategrey;
+    flex-grow: 1;
+}
+
+#titulo {
+    padding: 1rem;
+    color: orange;
+    text-shadow: 3px 2px 5px black;
+}
+
+.divContainer {
+    background-color: orange;
+    color: white;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    width: 90%;
+    height: auto;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px black;
+}
+
+.card {
+    background-color: darkslategrey;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    flex-basis: grow;
+    padding: 0.3rem;
+    border: black 1px solid;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px black;
+}
+
+.card h1 {
+    color: orange
+}
+
+.card img {
+    border-radius: 0.2rem;
+    width: 100%;
+    height: 250px;
+}
+
+.card p {
+    text-align: center;
+    padding: 1rem;
+}
+
+.lista {
+    border: solid 1px black;
+    background-color: orange;
+    color: darkslategrey;
+    box-shadow: 0 0 5px black;
+    margin: 1rem 0 1rem 0;
+    border-radius: 0.5rem;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.callToActionContainer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+
+}
+
+.callToAction {
+    width: 40%;
+    height: 30%;
+    border: 1px solid #fff;
+}
+
+.callToAction > img {
+    width: 40%;
+    overflow: hidden;
+}
