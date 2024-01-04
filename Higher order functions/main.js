@@ -140,6 +140,8 @@
 //     }
 // }
 
+////No sabia porque no me andaba el sort, estaba usando punto en vez de corchetes jaja
+
 // console.log(sortBeerByProperty(beers, "ibu", false));
 
 //11
