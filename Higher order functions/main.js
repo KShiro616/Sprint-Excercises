@@ -95,6 +95,31 @@
 
 // console.log(beerOnIndex(beers, "Fake Lager"));
 
+//9
+
+const limitBeerAlcoholLevel = (beers, ABVNotToExceed) => {
+  //nos aseguramos de que ABVNotToExceed sea un numero.
+  if (typeof ABVNotToExceed !== "number") return console.error("You must input a number for the ABV!")
+
+  const beersWithinABVLevel = [];
+
+  for (const beer of beers) {
+    if (beer.abv <= ABVNotToExceed) {
+      const withinABVLevel = {
+        name: beer.name,
+        abv: beer.abv,
+        ibu: beer.ibu
+      }
+
+      beersWithinABVLevel.push(withinABVLevel)
+    }
+  }
+
+  return beersWithinABVLevel;
+
+}
+
+console.log(limitBeerAlcoholLevel(beers, 5));
 
 
 
