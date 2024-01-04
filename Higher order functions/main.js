@@ -68,20 +68,21 @@
 
 //7
 
+// const matchBeerIBU = (beers, IBUToMatch) => {
+//   //Nos aseguramos de que el IBU sea un número.
+//   if (typeof IBUToMatch !== "number") return console.error("You must input a number for the IBU!");
 
-const matchBeerIBU = (beers, IBUToMatch) => {
-  //Nos aseguramos de que el IBU sea un número.
-  if (typeof IBUToMatch !== "number") return console.error("You must input a number for the IBU!");
+//   let match =  `There is no beer with an ibu of "${IBUToMatch}"`;
 
-  let match =  `There is no beer with an ibu of "${IBUToMatch}"`;
+//   for (const beer of beers) {
+//     if (beer.ibu === IBUToMatch) match = beer;
+//   }
 
-  for (const beer of beers) {
-    if (beer.ibu === IBUToMatch) match = beer;
-  }
+//   return match;
+// }
+// console.log(matchBeerIBU(beers, 38))
 
-  return match;
-}
-console.log(matchBeerIBU(beers, 38))
+//8
 
 
 
