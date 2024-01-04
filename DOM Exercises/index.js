@@ -21,7 +21,7 @@ const divContenedor = document.getElementById("contenedor");
 divContenedor.classList.add("divContainer");
 
 
-function cardSpitter(nombre, foto, descripcion) {
+function crearCartas(nombre, foto, descripcion) {
   return `
   <article class="card">
   <h1>${nombre}</h1>
@@ -34,7 +34,7 @@ function cardSpitter(nombre, foto, descripcion) {
 function imprimirArray(frutas) {
   let guardarRes = "";
   for (const fruta of frutas) {
-    guardarRes+= cardSpitter(fruta.nombre, fruta.foto, fruta.descripcion);
+    guardarRes+= crearCartas(fruta.nombre, fruta.foto, fruta.descripcion);
   }
   divContenedor.innerHTML+= guardarRes;
 };

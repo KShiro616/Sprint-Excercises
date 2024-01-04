@@ -123,21 +123,3 @@ main {
     justify-content: center;
     align-items: center;
 }
-
-.callToActionContainer {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-
-}
-
-.callToAction {
-    width: 40%;
-    height: 30%;
-    border: 1px solid #fff;
-}
-
-.callToAction > img {
-    width: 40%;
-    overflow: hidden;
-}
