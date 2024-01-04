@@ -1,0 +1,54 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+layout {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100%;
+  gap: 1rem;
+  overflow: hidden;
+  padding: 5rem;
+} 
+.card {
+  width: 20rem;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.5px solid blue;
+  background-color: aqua;
+  align-self: center;
+  overflow: hidden;
+  padding: 1rem;
+
+}
+
+.card h1, h2, p {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid blue;
+  width: 100%;
+}
+
+.card > p {
+  font-weight: bold;
+}
+
+.card img {
+  width: 9rem;
+  height: 16rem;
+  overflow: hidden;
+}
