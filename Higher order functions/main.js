@@ -84,6 +84,21 @@
 
 //8
 
+// const beerOnIndex = (beers, beerName) => {
+//   for (let i = 0; i < beers.length; i++) {
+//     if (beers[i].name === beerName) return `The position of the beer "${beerName}" in the beers array is [${i}]`;
+//   }
+
+//   return console.error(`"${beerName}" does not exist`)
+
+// };
+
+// console.log(beerOnIndex(beers, "Fake Lager"));
+
+
+
+
+
 
 
 
