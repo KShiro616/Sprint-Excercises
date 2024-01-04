@@ -97,30 +97,50 @@
 
 //9
 
-const limitBeerAlcoholLevel = (beers, ABVNotToExceed) => {
-  //nos aseguramos de que ABVNotToExceed sea un numero.
-  if (typeof ABVNotToExceed !== "number") return console.error("You must input a number for the ABV!")
+// const limitBeerAlcoholLevel = (beers, ABVNotToExceed) => {
+//   //nos aseguramos de que ABVNotToExceed sea un numero.
+//   if (typeof ABVNotToExceed !== "number") return console.error("You must input a number for the ABV!")
 
-  const beersWithinABVLevel = [];
+//   const beersWithinABVLevel = [];
 
-  for (const beer of beers) {
-    if (beer.abv <= ABVNotToExceed) {
-      const withinABVLevel = {
-        name: beer.name,
-        abv: beer.abv,
-        ibu: beer.ibu
-      }
+//   for (const beer of beers) {
+//     if (beer.abv <= ABVNotToExceed) {
+//       const withinABVLevel = {
+//         name: beer.name,
+//         abv: beer.abv,
+//         ibu: beer.ibu
+//       }
 
-      beersWithinABVLevel.push(withinABVLevel)
-    }
-  }
+//       beersWithinABVLevel.push(withinABVLevel)
+//     }
+//   }
 
-  return beersWithinABVLevel;
+//   return beersWithinABVLevel;
 
-}
+// }
 
-console.log(limitBeerAlcoholLevel(beers, 5));
+// console.log(limitBeerAlcoholLevel(beers, 5));
 
+
+//10
+
+// function sortBeerByProperty(beers, propertyName, boolean ) {
+
+//   //Nos aseguramos de que la propiedad exista.
+//   if(!beers[0].hasOwnProperty(propertyName)) return console.error(`The property "${propertyName}" does not exist as a beer property`);
+//   //nos aseguramos de que el tercer valor sea un valor booleano.
+//   if(typeof boolean !== "boolean") return console.error(`The third parameter "${boolean}" must be a Boolean! Either true or false.`);
+
+//     if(boolean) {
+//       const sortedBeers = beers.sort((a, b) => b[propertyName] - a[propertyName])
+//       return sortedBeers.slice(0, 10);
+//     } else {
+//       const sortedBeers = beers.sort((a, b) => a[propertyName] - b[propertyName])
+//       return sortedBeers.slice(0, 10);
+//     }
+// }
+
+// console.log(sortBeerByProperty(beers, "ibu", false));
 
 
 
