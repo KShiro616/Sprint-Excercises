@@ -84,8 +84,12 @@
 // //8
 
 // const beerOnIndex = (beers, beerName) => {
-//   for (let i = 0; i < beers.length; i++) {
-//     if (beers[i].name === beerName) return `The position of the beer "${beerName}" in the beers array is [${i}]`;
+//   // for (let i = 0; i < beers.length; i++) {
+//   //   if (beers[i].name === beerName) return `The position of the beer "${beerName}" in the beers array is [${i}]`;
+//   // }
+  
+//   for (const beer of beers) {
+//     if(beer.name === beerName) return `The position of the beer "${beerName}" in the beers array is [${beers.indexOf(beer)}]`
 //   }
 
 //   return console.error(`"${beerName}" does not exist`)
@@ -119,7 +123,6 @@
 // }
 
 // console.log(limitBeerAlcoholLevel(beers, 5));
-
 
 // //10
 
